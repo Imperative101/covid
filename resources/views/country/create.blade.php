@@ -13,12 +13,12 @@
  
                     <div class="form-group">
                         <label>name</label>
-                        <input type="text" name="grade"  class="form-control">
+                        <input type="text" name="country_name"  class="form-control">
                         {{-- <small class="form-text text-muted">name</small> --}}
                     </div>
                     <div class="form-group">
                         <label>citizen</label>
-                        <input type="text" name="letter"  class="form-control">
+                        <input type="text" name="country_citizens"  class="form-control">
                         {{-- <small class="form-text text-muted">citizen number</small> --}}
                     </div>
 

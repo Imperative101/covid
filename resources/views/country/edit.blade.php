@@ -12,12 +12,12 @@
 
                     <div class="form-group">
                         <label>Name</label>
-                        <input type="text" name="grade"  class="form-control" value="{{$country->name}}">
+                        <input type="text" name="country_name"  class="form-control" value="{{$country->name}}">
                         {{-- <small class="form-text text-muted">Name.</small> --}}
                     </div>
                     <div class="form-group">
                         <label>Citizen</label>
-                        <input type="text" name="letter"  class="form-control" value="{{$country->citizen}}">
+                        <input type="text" name="country_citizens"  class="form-control" value="{{$country->citizen}}">
                         {{-- <small class="form-text text-muted">Citizen.</small> --}}
                     </div>
                     @csrf

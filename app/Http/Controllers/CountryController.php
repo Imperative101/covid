@@ -14,8 +14,8 @@ class CountryController extends Controller
      */
     public function index()
     {
-        $countries = country::all();
-        return view('countries.index', ['countries' => $countries]);
+        $countries = Country::all();
+        return view('country.index', ['countries' => $countries]);
     }
 
     /**
@@ -36,9 +36,9 @@ class CountryController extends Controller
      */
     public function store(Request $request)
     {
-        $country = new country;
+        $country = new Country();
         $country->name = $request->country_name;
-        $country->citizen = $request->country_citizen;
+        $country->citizen = $request->country_citizens;
         $country->save();
         return redirect()->route('country.index');
     }
@@ -62,7 +62,8 @@ class CountryController extends Controller
      */
     public function edit(Country $country)
     {
-        //
+        echo 'labas, prasau mane nukreipk i edit view';
+        // cia turi buti nukreipimas i redagavimo view ir reikia paduoti $country,nes ja redaguosim
     }
 
     /**
