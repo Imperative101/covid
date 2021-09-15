@@ -66,7 +66,7 @@ class VaccinationController extends Controller
      */
     public function edit(Vaccination $vaccination)
     {
-        //
+        return view('vaccination.edit', ['vaccination' => $vaccination]);
     }
 
     /**

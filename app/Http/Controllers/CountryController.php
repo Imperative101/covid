@@ -62,7 +62,7 @@ class CountryController extends Controller
      */
     public function edit(Country $country)
     {
-        echo 'labas, prasau mane nukreipk i edit view';
+        return view('country.edit', ['country' => $country]);
         // cia turi buti nukreipimas i redagavimo view ir reikia paduoti $country,nes ja redaguosim
     }
 
